@@ -15,9 +15,8 @@ if vowelNo > 1 or vowelNo == 0:
 elif vowelNo == 1:
     vowelText = " vowel"
 
+print("The text you've entered has " + str(vowelNo) + vowelText + " in it.")
+
 # Adds extra text if y is in the string, as it's sometimes a vowel
-if 'y' not in lowerText:
-    print("The text you've entered has " + str(vowelNo) + vowelText + " in it.")
-elif 'y' in lowerText:
-    print("The text you've entered has " + str(vowelNo) + vowelText + " in it.")
+if 'y' in lowerText:
     print("(" + str(vowelNoY) + " if you count Y)")
